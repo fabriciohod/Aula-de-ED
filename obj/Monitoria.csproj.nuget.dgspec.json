@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj": {}
+    "C:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj": {}
   },
   "projects": {
-    "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj": {
+    "C:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
+        "projectUniqueName": "C:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
         "projectName": "Monitoria",
-        "projectPath": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
+        "projectPath": "C:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
         "packagesPath": "C:\\Users\\fabricio\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\obj\\",
+        "outputPath": "C:\\Users\\fabricio\\Desktop\\Aula-de-ED\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fabricio\\AppData\\Roaming\\NuGet\\NuGet.Config"

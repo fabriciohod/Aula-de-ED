@@ -69,7 +69,7 @@ namespace Monitoria
             Tree treeC = new(null, 'C', treeF);
             Tree root = new(treeB, 'A', treeC);
 
-            Console.WriteLine(root.SearchTree(root, 'G'));
+            Console.WriteLine(root.SearchTree(root, 'G').Info);
         }
     }
 }
