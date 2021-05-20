@@ -45,8 +45,8 @@ namespace Arvore
         {
             if(_tree is null)
                 return;
-                
-            Console.Write($"{_tree.Info}  ");
+
+            Console.Write($"{_tree.Info} | ");
             PercorrerPreFixado(_tree.Right);
             PercorrerPreFixado(_tree.Left);
         }
