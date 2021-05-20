@@ -31,11 +31,13 @@ namespace Arvore
                 {
                     result = SearchTree(root.Right, element);
 
-                    if(result is null)
+                    if (result is null)
+                    {
                         result = SearchTree(root.Left, element);
+                    }
                 }
             }
-            
+
             return result;
         }
     }
