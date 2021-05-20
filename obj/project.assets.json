@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fabricio\\Desktop\\Monitoria\\Monitoria.csproj",
+      "projectUniqueName": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
       "projectName": "Monitoria",
-      "projectPath": "C:\\Users\\fabricio\\Desktop\\Monitoria\\Monitoria.csproj",
+      "projectPath": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\Monitoria.csproj",
       "packagesPath": "C:\\Users\\fabricio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fabricio\\Desktop\\Monitoria\\obj\\",
+      "outputPath": "c:\\Users\\fabricio\\Desktop\\Aula-de-ED\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fabricio\\AppData\\Roaming\\NuGet\\NuGet.Config"

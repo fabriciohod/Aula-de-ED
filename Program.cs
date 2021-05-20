@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using Arvore;
 using Pilha;
 using Fila;
-using System;
 
 namespace Monitoria
 {
@@ -9,8 +9,8 @@ namespace Monitoria
     {
         static void Main(string[] args)
         {
-            #region ED
-            Console.WriteLine("Lista estática");
+            #region Pilha
+            Console.WriteLine("Pilha estática");
             StaticStack staticStack = new(5);
             staticStack.Push(1);
             staticStack.Push(2);
@@ -22,7 +22,7 @@ namespace Monitoria
 
             Console.WriteLine(staticStack.Peek());
 
-            Console.WriteLine("Lista dinamica");
+            Console.WriteLine("Pilha dinamica");
             DinamicStack dinamicStack = new();
             dinamicStack.Push(1);
             dinamicStack.Push(2);
@@ -33,8 +33,9 @@ namespace Monitoria
             dinamicStack.Push(8);
 
             Console.WriteLine(dinamicStack.Peek());
+            #endregion
 
-
+            #region Fila
             Console.WriteLine("Fila estática");
             StaticQueue staticQueue = new(5);
 
@@ -59,6 +60,16 @@ namespace Monitoria
             Console.WriteLine(dinamicQueue.size);
             Console.WriteLine(dinamicQueue.Peek() + "\n");
             #endregion
+
+            Tree treeE = new(null, 'E', null);
+            Tree treeD = new(null, 'D', null);
+            Tree treeG = new(null, 'G', null);
+            Tree treeF = new(treeG, 'F', null);
+            Tree treeB = new(treeD, 'B', treeE);
+            Tree treeC = new(null, 'C', treeF);
+            Tree root = new(treeB, 'A', treeC);
+
+            Console.WriteLine(root.SearchTree(root, 'G'));
         }
     }
 }
