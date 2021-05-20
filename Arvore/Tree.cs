@@ -40,5 +40,34 @@ namespace Arvore
 
             return result;
         }
+
+        public static void PercorrerPreFixado(Tree _tree)
+        {
+            if (_tree is not null)
+            {
+                Console.Write($"{_tree.Info}  ");
+                PercorrerPreFixado(_tree.Right);
+                PercorrerPreFixado(_tree.Left);
+            }
+        }
+
+        public static void PercorrerInFixado(Tree _tree)
+        {
+            if (_tree is not null)
+            {
+                PercorrerInFixado(_tree.Right);
+                Console.Write($"{_tree.Info} | ");
+                PercorrerInFixado(_tree.Left);
+            }
+        }
+        public static void PercorrerPosFixado(Tree _tree)
+        {
+            if (_tree is not null)
+            {
+                PercorrerInFixado(_tree.Right);
+                PercorrerInFixado(_tree.Left);
+                Console.Write($"{_tree.Info} | ");
+            }
+        }
     }
 }

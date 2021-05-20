@@ -55,25 +55,5 @@ namespace Fila
         {
             return first.value;
         }
-
-        public void ReadQueue()
-        {
-            Node temp = first;
-
-            if (first is null)
-            {
-                WriteLine("fila vazia");
-                return;
-            }
-
-            else
-            {
-                while (temp is not null)
-                {
-                    WriteLine(temp.value);
-                    temp = temp.nextNode;
-                }
-            }
-        }
     }
 }

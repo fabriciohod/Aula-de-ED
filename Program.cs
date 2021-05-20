@@ -61,6 +61,7 @@ namespace Monitoria
             Console.WriteLine(dinamicQueue.Peek() + "\n");
             #endregion
 
+            #region Arvore
             Tree treeE = new(null, 'E', null);
             Tree treeD = new(null, 'D', null);
             Tree treeG = new(null, 'G', null);
@@ -69,7 +70,11 @@ namespace Monitoria
             Tree treeC = new(null, 'C', treeF);
             Tree root = new(treeB, 'A', treeC);
 
-            Console.WriteLine(root.SearchTree(root, 'G').Info);
+            root.SearchTree(root, 'G');
+
+            Tree.PercorrerPreFixado(root);
+            Console.WriteLine();
+            #endregion
         }
     }
 }
