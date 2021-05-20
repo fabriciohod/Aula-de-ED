@@ -72,8 +72,14 @@ namespace Monitoria
 
             root.SearchTree(root, 'G');
 
+            Console.WriteLine("Pre-Fixado");
             Tree.PercorrerPreFixado(root);
             Console.WriteLine();
+            Console.WriteLine("Pos-Fixado");
+            Tree.PercorrerPosFixado(root);
+            Console.WriteLine();
+            Console.WriteLine("In-Fixado");
+            Tree.PercorrerInFixado(root);
             #endregion
         }
     }
