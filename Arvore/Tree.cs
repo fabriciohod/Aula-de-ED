@@ -15,6 +15,7 @@ namespace Arvore
             Left = left;
         }
 
+        
         public Tree SearchTree(Tree root, char element)
         {
             Tree result;
@@ -41,19 +42,19 @@ namespace Arvore
             return result;
         }
 
-        public static void PercorrerPreFixado(Tree _tree)
+        public static void PercorrerPreFixado(Tree root)
         {
-            if(_tree is null)
+            if (root is null)
                 return;
 
-            Console.Write($"{_tree.Info} | ");
-            PercorrerPreFixado(_tree.Right);
-            PercorrerPreFixado(_tree.Left);
+            Console.Write($"{root.Info} | ");
+            PercorrerPreFixado(root.Right);
+            PercorrerPreFixado(root.Left);
         }
 
         public static void PercorrerInFixado(Tree _tree)
         {
-            if(_tree is null)
+            if (_tree is null)
                 return;
 
             PercorrerInFixado(_tree.Right);
@@ -62,9 +63,9 @@ namespace Arvore
         }
         public static void PercorrerPosFixado(Tree _tree)
         {
-            if(_tree is null)
+            if (_tree is null)
                 return;
-            
+
             PercorrerInFixado(_tree.Right);
             PercorrerInFixado(_tree.Left);
             Console.Write($"{_tree.Info} | ");

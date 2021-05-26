@@ -81,6 +81,16 @@ namespace Monitoria
             Console.WriteLine("In-Fixado");
             Tree.PercorrerInFixado(root);
             #endregion
+
+            #region Arvore nao binaria
+            TreeNoBin treeNoBin = new(new NoBinNode(null, 4, null));
+
+
+            treeNoBin.InsertNoBin(new NoBinNode(null, 1, null));
+
+
+            treeNoBin.PercorrerPreFixado(treeNoBin.root);
+            #endregion
         }
     }
 }
