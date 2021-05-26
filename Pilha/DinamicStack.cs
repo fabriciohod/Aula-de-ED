@@ -50,7 +50,5 @@ namespace Pilha
             else
                 return top.value;
         }
-
-
     }
 }
